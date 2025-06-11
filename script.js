@@ -55,11 +55,11 @@ function memberMarkUp(teamMembers){
   
   const markUp = `
   <div class="col">
-  <div class="card">
+  <div class="card bg-black">
       <img src="${img}" alt="card-img-top">
       <div class="card-body">
-          <h3> ${name}</h3>
-          <div> ${role}</div>
+          <h3 class="text-light"> ${name}</h3>
+          <div class="text-light"> ${role}</div>
               <a href=""> ${email}</a>
       </div>
   </div>
