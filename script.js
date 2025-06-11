@@ -60,7 +60,7 @@ function memberMarkUp(teamMembers){
       <div class="card-body">
           <h3> ${name}</h3>
           <div> ${role}</div>
-              <address> ${email}</address>
+              <a href=""> ${email}</a>
       </div>
   </div>
   </div>`
