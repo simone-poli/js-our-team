@@ -37,6 +37,8 @@ const teamMembers = [
   }
 ];
 //console.log(teamMembers)
+
+
 const rowEl = document.querySelector(".row");
 
 
@@ -54,7 +56,7 @@ function memberMarkUp(teamMembers){
   const markUp = `
   <div class="col">
   <div class="card">
-      <img src="img/${img}" alt="card-img-top">
+      <img src="${img}" alt="card-img-top">
       <div class="card-body">
           <h3> ${name}</h3>
           <div> ${role}</div>
@@ -74,7 +76,7 @@ function memberMarkUp(teamMembers){
                 const markUp = memberMarkUp(members) 
                 console.log(markUp)
                 
-                members += markUp
+                nodeEl.insertAdjacentHTML('beforeend', markUp)
               }
             }
             
